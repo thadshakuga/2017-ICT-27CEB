@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="style.css">
+				<style>
+					table, td{
+						border-collapse:collapse;
+						fort-size:22px;
+						}
+					tr{
+						height:30px;
+						width:100px;
+						}
+					table.center{
+						margin-left:auto;
+						margin-right:auto;
+						}
+					#bill {
+					border-radius: 50px;
+					border: 2px solid black;
+					width: 650px;
+					height: 270px;
+					}
+					#thadsha{
+						text-align:center;
+						font-weight:bold;
+						font-size:25px;
+						}
+					button{
+						border-radius:8px;
+						font-size:12px;
+						padding:8px 15px;
+						}
+					
+				</style>
+			</head>
+		<body>
+			<br>
+			<div id="thadsha">Domestic Electricity Bill Calculator</div>
+			<center>
+			<div id="bill" >
+				<form>
+					<table class="center">
+						<tr>
+							<td style="width:200px">
+							<label for="Units">No of units used:</label>
+							</td>
+							<td>
+							<input type="number" id="unit" name="unit"></td>
+						<td>kWh</td>
+						</tr>
+						<tr>
+							<td style= "text-align:right">
+							<button type="button" onclick="document.getElementById('unit').value=''">Clear</button>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:right">
+							<button type="button" style="padding: 13px 23px" id="bills" onclick="Calculate()">Calculate My Bill</button>
+							</td>
+							</tr>
+							<tr>
+								<td>Your bill amount is:</td>
+								<td id="rs">
+								<td/>
+								</tr>
+					</table>
+				</form>
+				</div>
+				<table>
+						<tr>
+							<td style="width:450px"><a href="http://roar.media/english/life/reports/electricity-bill-calculated-analysis">More information on how my bill is<br>Calculated</a></td>
+							<td><a href="https://ceb.lk/">Go to CEB website</a></td>
+						</tr>
+				</table>
+			</center>
+			<script src="Script.js"></script>
+		</body>
+	</html>
+							
